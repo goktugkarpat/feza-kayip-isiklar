@@ -7,6 +7,10 @@ fenerin kayıp ışıklarını bulur, her diyarın büyük ve huysuz dostunu ne�
 Korkutucu hiçbir şey yoktur; düşmanlar aslında huysuzdur, neşelenince ışıl ışıl olurlar. Feza okuma bilmediği için
 her şey Feza'nın, anlatıcının sesiyle ve simgelerle anlatılır. Dünya Haritası'nda fener ortadadır, on ada onun etrafını sarar.
 
+**Oyna:** https://goktugkarpat.github.io/feza-piril-3d-arpg/
+
+![Dünya Haritası](ekran/harita.jpg)
+
 ## Diyarlar
 
 1. **Işıklı Mantar Vadisi** — Şarkı mantarları, zıplatan mantarlar, sisli bir tünel ve Pırıl'ın ışık nefesi. Oyunu öğreten ilk diyar. Koca Pofuduk Mantar'ı neşelendir.
@@ -14,11 +18,22 @@ her şey Feza'nın, anlatıcının sesiyle ve simgelerle anlatılır. Dünya Har
 3. **Huysuz Orman** — Fener fidanlarını yak, kamp ateşinin başında Baba ve Kartal'la buluş, Kral Jöle'yi neşelendir.
 4. **Altın Değirmen Vadisi** — Un, su ve ateş topla, Hala'yla ışık ekmeği pişir, durmuş değirmenin çarklarını çevir.
 5. **Köstebek ve Salyangoz Mağarası** — Işık aynaları ve renk yankıları, parlayan kristaller. Bilbo da bu diyarda ekibe katılır. Usta Köstebek'i neşelendir.
+
+| | |
+|---|---|
+| ![Işıklı Mantar Vadisi](ekran/mantar_vadisi.jpg) | ![Mercan Krallığı](ekran/mercan_kralligi.jpg) |
+
 6. **Ay Tapınağı** — Ay ışığı altında taş bir tapınak. Alçak yerçekimiyle zıpla, yıldız basamaklarına çık, takımyıldızlarını uyandır.
 7. **Lav Yanardağı** — Sıcak ama güvenli nehir çarkları. Pırıl uyur, Feza onu taşır. Koca Lav Kaplumbağası'nı neşelendir.
 8. **Surlu Şehir** — Saat kulesi, unutulmuş eşyaları sahiplerine geri verme ve Huysuz Şövalye.
 9. **Ejderhanın Kalesi** — Üç yumurtayı sıcak yuvaya taşı. Tüm dostlar birlikte; Pırıl'ın ailesiyle büyük tanışma.
 10. **Büyük Fener** — Unutulmuş oyuncakları neşelendir, anıları geri getir ve fener yeniden yansın. Büyük final!
+
+| | |
+|---|---|
+| ![Köstebek ve Salyangoz Mağarası](ekran/magara.jpg) | ![Lav Yanardağı](ekran/lav_yanardagi.jpg) |
+
+![Ejderhanın Kalesi](ekran/ejderha_kalesi.jpg)
 
 Her diyarın sonunda boss neşelenir, ışık topu Pırıl'a gider, fenerin bir yüzü yanar ve bir sonraki diyar için ipucu verilir.
 Diyarlar arasında kısa bir yolculuk sahnesi vardır (atlanabilir).
@@ -28,9 +43,14 @@ Diyarlar arasında kısa bir yolculuk sahnesi vardır (atlanabilir).
 
 ## Nasıl açılır
 
-- **Bilgisayarda:** `index.html` dosyasına çift tıkla (internet gerekmez). İstersen oyun klasöründe `python -m http.server 8000` çalıştırıp http://localhost:8000/ adresini de açabilirsin.
 - **İnternette:** https://goktugkarpat.github.io/feza-piril-3d-arpg/
-- **iPad'de:** Yukarıdaki adresi Safari'de açıp Paylaş › **Ana Ekrana Ekle** de. İlk açılışta internet gerekir, sonrası internetsiz çalışır.
+- **iPad'de uygulama gibi (önerilen):**
+  1. iPad'de **Safari**'yi aç ve yukarıdaki adrese git.
+  2. Üstteki **Paylaş** düğmesine dokun (kutudan çıkan ok).
+  3. Listeden **Ana Ekrana Ekle**'yi seç, sonra **Ekle**'ye dokun.
+  4. Ana ekrandaki simgeye dokununca oyun tam ekran, uygulama gibi açılır.
+  5. İlk açılışta internet gerekir; sonrasında **internetsiz de çalışır**.
+- **Bilgisayarda:** klasördeki `index.html` dosyasına çift tıkla. Kurulum gerekmez.
 - **GitHub'a göndermek:** `yayinla.command` dosyasına çift tıkla.
 
 ## Nasıl oynanır
@@ -50,12 +70,11 @@ Diyarlar arasında kısa bir yolculuk sahnesi vardır (atlanabilir).
 - **Sessiz açmak:** adrese `?sessiz` ekle.
 - **Doğrudan bir diyarı açmak:** `?bolum=mantar&hepsiacik` (diğerleri: mercan, orman, degirmen, magara, mabet, yanardag, sehir, kale, fener). `?hepsiacik` bütün diyarları açar.
 - **Dünya Haritası:** ilk oyunda yalnız biten ve sıradaki diyar açıktır; oyun bir kez bitince hepsi serbest olur.
-- **Kayıt:** ilerleme tarayıcıda saklanır (`fener_` ile başlayan anahtarlar).
+- **Kayıt:** ilerleme tarayıcıda (iPad'de Safari'de) saklanır.
 - **Süre:** bir oturum yaklaşık 10–15 dakikalık bir diyardır; bütün oyun yaklaşık 2 saat 20 dakika sürer. Oyun istenen yerde bırakılıp sonra devam edilir.
-- **Geliştirici:** yeni bir bölüm dosyası (`src/06z_<id>.js`, `05z_<id>.js`, `02l_<id>.js`) eklenince bir kez `python tools/liste.py` çalıştır; `index.html` ve `sw.js` dosya listesi yenilenir. Planlar `PLAN.md` ve `bolumler/` klasöründedir.
 
 ## Yapım
 
-Bu oyun, Feza'nın babası **Göktuğ Karpat** (@goktugkarpat) ile yapay zekâ yardımcıları **Claude** (Anthropic) ve **Codex** (OpenAI) birlikte çalışarak yapılmıştır.
-Fikirler, hikâye ve kararlar ailenindir; kod, 3B modeller, bölüm tasarımları ve düzenlemeler Claude ve Codex ile birlikte yazılmıştır.
+Bu oyun, Feza'nın babası **Göktuğ Karpat** (@goktugkarpat) ile yapay zekâ yardımcıları **Claude Code** (Anthropic), **Codex** (OpenAI) ve **Antigravity** (Google) birlikte çalışarak yapılmıştır.
+Fikirler, hikâye ve kararlar ailenindir; kod, 3B modeller, bölüm tasarımları ve düzenlemeler bu yardımcılarla birlikte yazılmıştır.
 Oyun yalnızca Feza için, kâr amacı olmadan yapılmış bir aile projesidir.
