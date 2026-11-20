@@ -1,4 +1,4 @@
-# feza-piril-3d-arpg (Feza ve Pırıl: Büyük Fener)
+# feza-kayip-isiklar (Feza ve Pırıl: Kayıp Işıklar)
 
 **Önce `PLAN.md` dosyasını tamamen oku** — projenin tek kaynağıdır (kararlar, hikâye, 10 bölüm, teknik plan, kurallar).
 Ayrıca `../CLAUDE.md` (tüm Feza oyunları için kurallar) geçerlidir.

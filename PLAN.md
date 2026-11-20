@@ -6,7 +6,7 @@
 
 ## 0. Durum ve kapsam
 - **Durum (1 Kasım 2026): PLAN AŞAMASI TAMAM — ayrıntı planları onaylandı, kodlama başlamadı.** Sıradaki iş altyapıdır (§10). `bolumler/` altındaki 10 bölüm planı ve `bolumler/00_INDEKS.md` bağlayıcıdır.
-- **Bu klasör (`feza-piril-3d-arpg/`) yeni, ayrı oyundur.** Mevcut oyunlara (`../feza-bilbo/` ve içindeki orman, huysuz, hala, piril; `../feza-piril`, `../feza-geziyor`, `../feza-unicorn`, `../bahtiyar-kabir-azabı`) **DOKUNULMAZ**. Yalnız okunur ve kopyalanır. Eski oyunlara ne olacağına yeni oyun hazır olduktan sonra ebeveyn karar verecek.
+- **Bu klasör (`feza-kayip-isiklar/`) yeni, ayrı oyundur.** Mevcut oyunlara (`../feza-bilbo/` ve içindeki orman, huysuz, hala, piril; `../feza-piril`, `../feza-geziyor`, `../feza-unicorn`, `../bahtiyar-kabir-azabı`) **DOKUNULMAZ**. Yalnız okunur ve kopyalanır. Eski oyunlara ne olacağına yeni oyun hazır olduktan sonra ebeveyn karar verecek.
 - Yeni oyun hazır olana kadar **GitHub'a gönderilmez** (ebeveyn "gönder" demeden hiçbir zaman gönderilmez; PR açılmaz, doğrudan `main`).
 - Hedef: 5 yaşındaki **Feza** için, **~2 saatlik**, **10 bölümlük**, tutarlı hikâyeli, epik klasik RPG tarzında tek oyun.
 
@@ -102,10 +102,10 @@ Dışarıda kalan: Kum Saati Çölü (ayrı bölüm olmaz; kum saati fikri uygun
 
 **Dosya sahipliği (çakışmayı önlemek için):** her bölüm yalnız kendi `06z_<id>.js` + `05z_<id>.js` + `02l_<id>.js` dosyalarına yazar. Motor dosyaları (`07_game`, `09_ui`, `03_fx`, `10_story`, `ui.css`) tek bir CORE/MOTOR ajanında; Pırıl dosyaları PIRIL3D'de; ses (`gen_voice.py`, `sesler.js`) SES'te; müzik (`02_audio.js`) MUZIK'te; envanter ESYA'da. Ajanlar arası istek: `scratchpad/.../istek/<KİMDEN>_<KİME>.md`.
 
-**Klasör yapısı (öneri):** `feza-piril-3d-arpg/` altında `index.html`, `src/`, `vendor/`, `sesler.js`, `sw.js`, `manifest.webmanifest`, simgeler, `yayinla.command`, `README.md`, `CLAUDE.md`, bu `PLAN.md`.
+**Klasör yapısı (öneri):** `feza-kayip-isiklar/` altında `index.html`, `src/`, `vendor/`, `sesler.js`, `sw.js`, `manifest.webmanifest`, simgeler, `yayinla.command`, `README.md`, `CLAUDE.md`, bu `PLAN.md`.
 
 ## 8. Her oyunda olması gereken kurallar (`../CLAUDE.md`'den özet; kuralın aslı orada)
-- iPad'de uygulama gibi açılsın: `manifest.webmanifest`, `apple-touch-icon` (180px) + 192/512 simge, `apple-mobile-web-app-capable`, **service worker (`sw.js`) ile internetsiz çalışma** (index.html önce ağ, diğerleri önce önbellek; eski önbellek silerken yalnız kendi öneki ör. `k.startsWith('feza-piril-3d-arpg-')`).
+- iPad'de uygulama gibi açılsın: `manifest.webmanifest`, `apple-touch-icon` (180px) + 192/512 simge, `apple-mobile-web-app-capable`, **service worker (`sw.js`) ile internetsiz çalışma** (index.html önce ağ, diğerleri önce önbellek; eski önbellek silerken yalnız kendi öneki ör. `k.startsWith('feza-kayip-isiklar-')`).
 - Dokunmatik kolay kontrol (sürükleyerek hareket; klavye yedek).
 - Seslendirme: doğal Türkçe kadın sesi **edge-tts `tr-TR-EmelNeural`**, önceden kaydedilmiş mp3; baş/sondaki sessizlik ffmpeg ile kırpılır; tarayıcı sesi yok; İngilizce kelimeler doğru telaffuzla yazılır. "Aa", "Oo" gibi kısa büyük harfli ünlemler kullanılmaz ("Bak bak", "Vay").
 - Övgü ara sıra ve çeşitli.
@@ -121,7 +121,7 @@ Dışarıda kalan: Kum Saati Çölü (ayrı bölüm olmaz; kum saati fikri uygun
 
 ## 10. Sıradaki adımlar
 **Plan aşaması tamam (1 Kasım 2026):** 10 bölümün ayrıntı planı ve indeks onaylandı; 5 karar işlendi (§1, 17–21). Kalan 17 küçük soru kodlamadan önce/sırasında karar verilir; ebeveyn itiraz etmezse `bolumler/00_INDEKS.md`'deki öneri geçerlidir.
-1. **Altyapı (CORE):** `../feza-bilbo/piril/` motorunu `feza-piril-3d-arpg/`'e kopyala; yeni başlık/giriş/hikâye (STORY), 10 bölümlük sıralı akış, kayıt ve "Devam Et", resimli harita (9+1 parçalı fener), bölüm geçişi + atlanabilir yolculuk, bölüm sonu akışı, **tek net efekt kuyruğu**, boss işareti/uyarı, eşlikçi API ve `BILBO=PIRIL` takma adının ayrılması, zıplama, castle tabanı (indeks bölüm (d)). PIRIL3D, SES, MUZIK ve ESYA ajanlarının hazırlığı paralel.
+1. **Altyapı (CORE):** `../feza-bilbo/piril/` motorunu `feza-kayip-isiklar/`'e kopyala; yeni başlık/giriş/hikâye (STORY), 10 bölümlük sıralı akış, kayıt ve "Devam Et", resimli harita (9+1 parçalı fener), bölüm geçişi + atlanabilir yolculuk, bölüm sonu akışı, **tek net efekt kuyruğu**, boss işareti/uyarı, eşlikçi API ve `BILBO=PIRIL` takma adının ayrılması, zıplama, castle tabanı (indeks bölüm (d)). PIRIL3D, SES, MUZIK ve ESYA ajanlarının hazırlığı paralel.
 2. **Ses hazırlığı:** cümle anahtar adlarını tek kurala bağla; metni kesinleşen cümleleri (Kral adı Tonton artık belli) kaydetmeye hazırla; Aa/Oo kuralı ve İngilizce kelime denetimi.
 3. **Bölümleri sırayla yaz/taşı (1→10)** indeksteki bağımlılık sırasıyla; her bölüm kendi `06z_/05z_/02l_` dosyalarında, kendi testleriyle (`?sessiz`).
 4. Seslendirme (yeni anlatı metni), müzik, envanter, Pırıl yetenek dağılımı.

@@ -26,18 +26,18 @@ if ! git diff --cached --quiet; then
   git commit -m "Feza ve Pırıl: Kayıp Işıklar – güncelleme $(date '+%Y-%m-%d %H:%M')" -m 'Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>' -m 'Co-authored-by: Codex <codex@openai.com>'
 fi
 if ! git remote get-url origin >/dev/null 2>&1; then
-  if gh repo view goktugkarpat/feza-piril-3d-arpg >/dev/null 2>&1; then
-    git remote add origin https://github.com/goktugkarpat/feza-piril-3d-arpg.git
+  if gh repo view goktugkarpat/feza-kayip-isiklar >/dev/null 2>&1; then
+    git remote add origin https://github.com/goktugkarpat/feza-kayip-isiklar.git
     git push -u origin main
   else
-    gh repo create goktugkarpat/feza-piril-3d-arpg --public --source . --remote origin --push \
+    gh repo create goktugkarpat/feza-kayip-isiklar --public --source . --remote origin --push \
       --description 'Feza ve Pırıl: sönen Büyük Fener için on diyarda ışık arayan Türkçe seslendirmeli 3B rüya macerası (5 yaş).'
   fi
 else
   git push -u origin main
 fi
-if ! gh api repos/goktugkarpat/feza-piril-3d-arpg/pages >/dev/null 2>&1; then
-  gh api -X POST repos/goktugkarpat/feza-piril-3d-arpg/pages -f 'source[branch]=main' -f 'source[path]=/' >/dev/null
+if ! gh api repos/goktugkarpat/feza-kayip-isiklar/pages >/dev/null 2>&1; then
+  gh api -X POST repos/goktugkarpat/feza-kayip-isiklar/pages -f 'source[branch]=main' -f 'source[path]=/' >/dev/null
 fi
-print 'Oyun gönderildi: https://goktugkarpat.github.io/feza-piril-3d-arpg/'
+print 'Oyun gönderildi: https://goktugkarpat.github.io/feza-kayip-isiklar/'
 print 'İlk yayın birkaç dakika sürebilir.'

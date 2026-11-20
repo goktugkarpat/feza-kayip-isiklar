@@ -7,7 +7,7 @@ fenerin kayıp ışıklarını bulur, her diyarın büyük ve huysuz dostunu ne�
 Korkutucu hiçbir şey yoktur; düşmanlar aslında huysuzdur, neşelenince ışıl ışıl olurlar. Feza okuma bilmediği için
 her şey Feza'nın, anlatıcının sesiyle ve simgelerle anlatılır. Dünya Haritası'nda fener ortadadır, on ada onun etrafını sarar.
 
-**Oyna:** https://goktugkarpat.github.io/feza-piril-3d-arpg/
+**Oyna:** https://goktugkarpat.github.io/feza-kayip-isiklar/
 
 ![Dünya Haritası](ekran/harita.jpg)
 
@@ -43,7 +43,7 @@ Diyarlar arasında kısa bir yolculuk sahnesi vardır (atlanabilir).
 
 ## Nasıl açılır
 
-- **İnternette:** https://goktugkarpat.github.io/feza-piril-3d-arpg/
+- **İnternette:** https://goktugkarpat.github.io/feza-kayip-isiklar/
 - **iPad'de uygulama gibi (önerilen):**
   1. iPad'de **Safari**'yi aç ve yukarıdaki adrese git.
   2. Üstteki **Paylaş** düğmesine dokun (kutudan çıkan ok).

@@ -1,8 +1,8 @@
-/* Feza ve Pırıl: Büyük Fener — internetsiz çalışma. tools/liste.py üretir; elle düzenleme (tools/sw.sablon.js'i düzenle).
-   index.html önce ağdan, diğer dosyalar önce önbellekten. Eski önbellekleri silerken YALNIZ 'feza-piril-3d-arpg-' ile başlayanları siler
+/* Feza ve Pırıl: Kayıp Işıklar — internetsiz çalışma. tools/liste.py üretir; elle düzenleme (tools/sw.sablon.js'i düzenle).
+   index.html önce ağdan, diğer dosyalar önce önbellekten. Eski önbellekleri silerken YALNIZ 'feza-kayip-isiklar-' ile başlayanları siler
    (aynı sitedeki başka oyunların kopyasına dokunmaz). */
 'use strict';
-const PREFIX = 'feza-piril-3d-arpg-';
+const PREFIX = 'feza-kayip-isiklar-';
 const CACHE = PREFIX + 'v5ee0b72a19';
 const CORE = [
   './',
